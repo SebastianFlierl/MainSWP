@@ -1,4 +1,4 @@
-var figuren = ["apu","barney","bart","charles","glancy","grandpa","hibbert","homer","krusty","marge"];
+var figuren = ["Apu","Barney","Bart","Charles","Glancy","Grandpa","Hibbert","Homer","Krusty","Marge"];
 
 function changePics() {
     let bilder = document.querySelectorAll(".place img");
