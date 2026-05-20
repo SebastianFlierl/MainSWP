@@ -1,0 +1,21 @@
+body {
+
+}
+
+.WebsiteTitel {
+    display: inline-block;
+    background: green;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+    width: 400px;
+}
+
+
+.description {
+    width: 400px;
+    background: lightgray;
+    padding: 15px;
+    border-radius: 10px;
+    height: 700px;
+}

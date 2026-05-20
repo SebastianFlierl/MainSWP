@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Toolbox</title>
+    <link rel="stylesheet" href="Website.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+        <h1>Meine Projekte</h1>
+
+        <button onclick="showApp('currency')">Währungsrechner</button>
+        <button onclick="showApp('person')">Person Selector</button>
+        <button onclick="showApp('password')">Passwort Generator</button>
+    </div>
+
+    <div class="content">
+
+        <!-- Währungsrechner -->
+        <div id="currency" class="app active">
+            <h2>Währungsrechner</h2>
+
+            <input type="number" id="euroInput" placeholder="Euro eingeben">
+
+            <select id="currencySelect">
+                <option value="1.08">Dollar</option>
+                <option value="0.86">Pfund</option>
+                <option value="161">Yen</option>
+            </select>
+
+            <button onclick="convertCurrency()">Berechnen</button>
+
+            <h3 id="currencyResult">0</h3>
+        </div>
+
+
+        <!-- Person Selector -->
+        <div id="person" class="app">
+            <h2>Person Selector</h2>
+
+            <input type="text" id="namesInput" placeholder="Namen mit Komma trennen">
+
+            <button onclick="pickPerson()">Wählen</button>
+
+            <h3 id="selectedPerson">?</h3>
+        </div>
+
+
+        <!-- Passwort Generator -->
+        <div id="password" class="app">
+            <h2>Passwort Generator</h2>
+
+            <label>
+                <input type="checkbox" id="bigLetters" checked>
+                Große Buchstaben
+            </label>
+
+            <label>
+                <input type="checkbox" id="numbers" checked>
+                Zahlen
+            </label>
+
+            <label>
+                Länge:
+                <input type="number" id="length" value="10">
+            </label>
+
+            <button onclick="generatePassword()">Generate</button>
+
+            <h3 id="passwordResult"></h3>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="Website.js"></script>
+</body>
+</html>

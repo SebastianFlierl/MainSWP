@@ -1,5 +1,3 @@
-// Simpson.js
-
 var figuren = [
     "apu",
     "barney",
