@@ -9,7 +9,7 @@ function showApp(appId) {
 }
 
 
-// Währungsrechner
+
 function convertCurrency() {
     const euro = parseFloat(document.getElementById('euroInput').value);
     const rate = parseFloat(document.getElementById('currencySelect').value);
@@ -25,7 +25,7 @@ function convertCurrency() {
 }
 
 
-// Person Selector
+
 function pickPerson() {
     const input = document.getElementById('namesInput').value;
 
@@ -45,7 +45,7 @@ function pickPerson() {
 }
 
 
-// Passwort Generator
+
 function generatePassword() {
     const useBigLetters = document.getElementById('bigLetters').checked;
     const useNumbers = document.getElementById('numbers').checked;

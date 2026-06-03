@@ -1,5 +1,7 @@
-body {
-
+.Container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
 }
 
 .WebsiteTitel {
@@ -11,11 +13,60 @@ body {
     width: 400px;
 }
 
-
 .description {
     width: 400px;
     background: lightgray;
     padding: 15px;
     border-radius: 10px;
     height: 700px;
+}
+
+/* 1. Idee */
+
+.ButtonEins {
+    width: 400px;
+    background: lightgray;
+    padding: 15px;
+    border-radius: 30px;
+    height: 100px;
+    margin-left: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ButtonEins button {
+    padding: 30px 55px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+/* 2. Idee */
+
+.BildGenerator {
+    width: 400px;
+    background: lightgray;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+/* 3. Idee */
+
+.GroessenCheck {
+    width: 400px;
+    background: lightgray;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
 }

@@ -1,25 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projekt</title>
     <link rel="stylesheet" href="Projekt.css">
 </head>
+
 <body>
-    <div class="WebsiteTitel"> 
-        <H1>2bWI Projekt</H1>
+    <div class="Container">
+    <div class="C1">
+        <!-- überschrift -->
+        <div class="WebsiteTitel">
+            <H1>2bWI Projekt</H1>
+        </div>
+        <!-- ideen sammlung -->
+        <div class="description">
+            <H1>Idee:</H1>
+            <label for="Idee1">Mach ein einfachen Button der die hintergrundfarbe der website ändert.</label>
+            <input type="checkbox" id="Idee1" name="Idee" value="Idee1"> <br>
+            <label for="Idee2">Mach ein Textfeld mit einem button der ein bild anzeigt mit dem geschrieben text als überschrift.</label>
+            <input type="checkbox" id="Idee2" name="Idee" value="Idee2"> <br>
+            <label for="Idee3">Mach ein Textfeld mit einer button und wenn man seine größe angibt sagt es ob es over ist oder nicht</label>
+            <input type="checkbox" id="Idee3" name="Idee" value="Idee3">
+        </div>
     </div>
-    <div class="description">
-        <H1>Idee:</H1>
-        <label for="Idee1">Mach ein einfachen Button der die hintergrundfarbe der website ändert.</label>
-        <input type="checkbox" id="Idee1" name="Idee" value="Idee1"> <br>
-        <label for="Idee2">Mach ein Textfeld mit einem button der ein bild anzeigt mit dem geschrieben text als überschrift.</label>
-        <input type="checkbox" id="Idee2" name="Idee" value="Idee2">
+    <div class="C2">
+        <!-- 1 idee -->
+        <div class="ButtonEins">
+            <button type="button" id="Hintergrundfarbe Button">Hintergrundfarbe ändern</button>
+        </div>
+        <!-- 2 idee -->
+        <div class="BildGenerator">
+            <input type="text" id="titelInput" placeholder="Überschrift eingeben">
+            <button id="bildButton">Bild anzeigen</button>
+
+            <h2 id="ueberschrift"></h2>
+            <img id="bild" src="" alt="" style="display:none; width:400px;">
+        </div>
+        <!-- 3 idee -->
+        <div class="GroessenCheck">
+            <input type="number" id="groesseInput" placeholder="Größe in cm (z.B. 175)">
+            <button id="checkButton">Check</button>
+
+            <p id="ergebnis"></p>
+        </div>
     </div>
-
-
-
+</div>
 
 
 
@@ -35,4 +63,5 @@
 
     <script src="Projekt.js"></script>
 </body>
+
 </html>
