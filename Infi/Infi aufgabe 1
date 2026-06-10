@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Schule</title>
+</head>
+<body>
+
+<h2>Lehrer eingeben</h2>
+
+<form method="post">
+    <label>Lehrer-Vorname:</label>
+    <input type="text" name="lehrer" required>
+    <br><br>
+
+    <input type="submit" value="Speichern">
+</form>
+
+<?php
+if(isset($_POST['lehrer']))
+{
+    echo "Eingegebener Lehrer: " . htmlspecialchars($_POST['lehrer']);
+}
+?>
+
+</body>
+</html>

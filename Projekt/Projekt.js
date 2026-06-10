@@ -38,9 +38,15 @@ const ergebnis = document.getElementById("ergebnis");
 GroesseButton.addEventListener("click", function() {
     const groesse = Number(Groesseinput.value);
 
-    if (groesse <= 180) {
+    if (groesse < 168) {
+        ergebnis.textContent = "Yigits größe";
+    }
+    else if (groesse <= 180) {
         ergebnis.textContent = "Over";
     } else {
         ergebnis.textContent = "Nicht over";
     }
+
 });
+
+

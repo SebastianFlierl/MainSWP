@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Schule</title>
+</head>
+<body>
+
+<h2>Lehrer und Fach eingeben</h2>
+
+<form method="post">
+
+    <label>Lehrer-Vorname:</label>
+    <input type="text" name="lehrer" required>
+
+    <br><br>
+
+    <label>Fach:</label>
+    <input type="text" name="fach" required>
+
+    <br><br>
+
+    <input type="submit" value="Speichern">
+
+</form>
+
+<?php
+
+if(isset($_POST['lehrer']) && isset($_POST['fach']))
+{
+    echo "<h3>Eingaben:</h3>";
+
+    echo "Lehrer: " . htmlspecialchars($_POST['lehrer']);
+
+    echo "<br>";
+
+    echo "Fach: " . htmlspecialchars($_POST['fach']);
+}
+
+?>
+
+</body>
+</html>
