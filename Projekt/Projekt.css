@@ -70,3 +70,18 @@
     gap: 10px;
     align-items: center;
 }
+
+/* 4. Idee */
+
+.MusicPlayer {
+    width: 400px;
+    background: lightgray;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}

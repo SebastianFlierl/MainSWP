@@ -23,9 +23,9 @@ Bildbutton.addEventListener("click", function () {
     ueberschrift.textContent = input.value;
 
     // Zufälliges Bild
-    const zufall = Math.floor(Math.random() * 6);
+    const zufall = Math.floor(Math.random() * 7);
 
-    bild.src = `Bild${zufall}.png`;
+    bild.src = `Bilder/Bild${zufall}.png`;
     bild.style.display = "block";
 });
 
@@ -49,4 +49,42 @@ GroesseButton.addEventListener("click", function() {
 
 });
 
+// Musik Player
 
+const playButton = document.getElementById("playButton");
+const musik = document.getElementById("musik");
+const songName = document.getElementById("songName");
+
+const songs = [
+    "Musik/D4vd-Celeste.mp3",
+    "Musik/Glokk40spazz freesumo.mp3",
+    "Musik/Kpop song.mp3",
+    "Musik/No idea song mp3.mp3",
+    "Musik/Song5.mp3",
+    "Musik/song6.mp3",
+    "Musik/song7.mp3",
+    "Musik/song8.mp3",
+    "Musik/song9.mp3",
+    "Musik/song10.mp3",
+];
+
+let aktuellerSong = 0;
+
+musik.src = songs[aktuellerSong];
+songName.textContent = songs[aktuellerSong];
+
+document.getElementById("playButton").addEventListener("click", function() {
+    musik.play();
+});
+
+document.getElementById("nextButton").addEventListener("click", function() {
+    aktuellerSong++;
+
+    if (aktuellerSong >= songs.length) {
+        aktuellerSong = 0;
+    }
+
+    musik.src = songs[aktuellerSong];
+    songName.textContent = songs[aktuellerSong];
+    musik.play();
+});
