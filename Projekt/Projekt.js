@@ -60,7 +60,7 @@ const songs = [
     "Musik/Glokk40spazz freesumo.mp3",
     "Musik/Kpop song.mp3",
     "Musik/No idea song mp3.mp3",
-    "Musik/Song5.mp3",
+    "Musik/song5.mp3",
     "Musik/song6.mp3",
     "Musik/song7.mp3",
     "Musik/song8.mp3",
